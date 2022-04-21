@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Samsung"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-18 10:16:18 "/>
+        <attribute name="created" value="U2Ftc3VuZztERVNLVE9QLTFSTUM2VUQ7MjAyMi0wNC0xODsiMDk6NDY6MjkgIjszMDAz"/>
+        <attribute name="edited" value="U2Ftc3VuZztERVNLVE9QLTFSTUM2VUQ7MjAyMi0wNC0xODsiMTA6MTY6MTggIjsxOzMwOTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, nota4, media" type="Real" array="False" size=""/>
+            <declare name="aluno" type="String" array="False" size=""/>
+            <input variable="aluno"/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <input variable="nota4"/>
+            <assign variable="media" expression="(nota1+nota2+nota3+nota4)/4"/>
+            <if expression="media&gt;=7">
+                <then>
+                    <output expression="&quot;ol&#225;&quot; &amp; aluno &amp; &quot;sua m&#233;dia &#233; &quot; &amp; media &amp;&#13;&#10;&quot;Parab&#233;ns, voc&#234; est&#225; aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;ol&#225;&quot; &amp; aluno &amp; &quot;sua m&#233;dia &#233; &quot; &amp; media &amp;&#13;&#10;&quot;Voc&#234; est&#225; reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
